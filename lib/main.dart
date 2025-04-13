@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hello_flutter/theme.dart';
 
-// 화면에 보여줄 웨짓을 지정, main 함수를 시작으로 runApp() 함수를 실행해 플러터 프로젝트를 시작한다.
+// 화면에 보여줄 위젯을 지정, main 함수를 시작으로 runApp() 함수를 실행해 플러터 프로젝트를 시작한다.
 void main() {
   runApp(const MyApp());
 }
