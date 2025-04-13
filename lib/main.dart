@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
+import 'package:hello_flutter/theme.dart';
 
 // 화면에 보여줄 웨짓을 지정, main 함수를 시작으로 runApp() 함수를 실행해 플러터 프로젝트를 시작한다.
 void main() {
@@ -14,13 +14,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(
-        textTheme: GoogleFonts.aladinTextTheme(
-          Theme.of(context).textTheme,
-        ),
-        useMaterial3: false,
-        primarySwatch: Colors.green,
-      ),
+      theme: theme(context),
       home: Scaffold(
         appBar: AppBar(
           title: Text(
